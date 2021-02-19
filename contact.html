@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>London</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+  <script src="index.js"></script>
+  <style>
+    /* css style for the body*/
+    body{
+        background-color:#eee6ff;
+    }
+    
+    /* responsive media query for the background color*/
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color:#b3f0ff;
+  }
+}
+     /* css code for the background image and the h1 tag*/
+    .com{
+      background-image:url(https://blog.pitsco.com/hubfs/Blog%20Images/Telephone-Evolution-2024-0419.jpg);
+  background-repeat:no-repeat;
+ background-position: center;
+ background-size:cover;
+  position:relative;
+  height:450px;
+    }
+    .com h1{
+      color:white;
+      font-size:60px;
+      text-align:center;
+      padding:20px;
+    }
+     /* form css code*/
+    #form1{
+      background-color:white;
+      width:68%;
+      height:780px;
+      margin:50px auto;
+      padding:20px 40px;
+      border-radius:10px;
+    }
+     /* adding transition to button tag css code*/
+    button{
+      transition:2s;
+    }
+     /* style h1 tag in the form using gradient*/
+    #grad h2{
+      background-image: linear-gradient(to right, #00334e, #ee6f57);
+      font-family: 'Roboto Slab', serif;
+      text-align:center;
+      padding:20px 20px;
+      margin:20px auto;
+      height:40px;
+      font-size:40px;
+      text-shadow:5px 5px 5px white;
+    }
+     /* footer style*/
+    footer{
+      position:relative;
+      top:90px;
+    }
+  </style>
+</head>
+<body>
+  <!---navigation bar html code--> 
+    <header>
+      <nav id="bar">
+        <ul>
+          <li><a href="index.html"><img src="https://media1.giphy.com/media/nXQZ2BQ2VtbZC/giphy.gif?cid=ecf05e471uzw5ab5u4vuqydv5ccmhffx9jw45q2m4eapwqyw&rid=giphy.gif" alt="flag" width="75" height="50"></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="todo.html">To Do</a></li>
+          <li><a href="cuisine.html">Cuisine</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  <!---first section containing img and text h1 tag html code--> 
+  <main>
+    <section class="com">
+      <h1>Communication Is The Key</h1>
+    </section>
+    <section class="tour-main">
+      
+  <!---form html code--> 
+  <section id="grad">
+    <h2>Fill The Form</h2>
+  </section>
+    <form id="form1" action="/action_page.php">
+			<label for="name">FirstName:</label>
+      <!---adding icon html code--> 
+			<div class="inputWithIcon">
+			<input type="text"  name="name" id="name" placeholder="Enter Your FirstName" required>
+			<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+		</div>
+			<br><br>
+			<label for="lastname">LastName:</label>
+			<div class="inputWithIcon">
+			<input type="text"  name="lastname" id="lastname" placeholder="Enter Your LastName" required>
+			<i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+		</div>
+			<br><br>
+      <label for="phone">Phone:</label>
+			<div class="inputWithIcon">
+			<input type="text"  name="phone" id="phone" placeholder="Enter Your Phone Number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+			<i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i>
+		</div><br><br>
+			<label for="email">Email:</label>
+			<div class="inputWithIcon">
+			<input type="email"  name="email" id="email" placeholder="Enter Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+			<i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+		</div><br><br>
+    <label for="gender">Please Choose Your Gender:</label>
+			<select name="gender" id="gender">
+				<option value="0">Male</option>
+				<option value="1">Female</option>
+				<option value="2">None</option>
+			</select>
+      <br>
+      
+		<textarea id="area" name="area">Enter Your Comment</textarea><br>
+		<button id="button" onclick="fin()">Register</button>
+		<button id="res" onclick="clear()">Cancel</button>
+		</form>
+  </section>
+  </main>
+<!---footer html code--> 
+     <footer>
+     <a href="index.html"><img src="https://media1.giphy.com/media/nXQZ2BQ2VtbZC/giphy.gif?cid=ecf05e471uzw5ab5u4vuqydv5ccmhffx9jw45q2m4eapwqyw&rid=giphy.gif" alt="flag" width="75" height="50"></a>
+    <!---social media html code--> 
+     <div class="social-menu">
+	<ul>
+          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+           <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+           <li><a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"><i class="fa fa-snapchat"></i></a></li>
+           <li><a href="https://www.tripadvisor.com/"><i class="fa fa-tripadvisor"></i></a></li>
+           <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a></li>
+       </ul>
+      </div>
+    <!---copyright html code--> 
+      <div class="fot">
+		<p>Copyright, © R2H Gateway2020</p>
+	</div>
+  </footer>
+</body>
+</html>
